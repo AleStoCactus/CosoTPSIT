@@ -102,6 +102,8 @@ const charactersQ = [
 
 ];
 
+let count = 0;
+
 let currentQuestion = 0;
 let currentCharacter = charactersQ[0];
 let gameResult = '';
@@ -111,10 +113,9 @@ const questionElement = document.getElementById('question');
 const resultElement = document.getElementById('result');
 
 function startGame() {
-    
     let questionText = "";
 
-
+    
     let currentCharacters = charactersQ[currentQuestion];
     while (currentCharacters.answerr !== undefined) {
         questionText += currentCharacter.answerr + "?";   
@@ -124,11 +125,23 @@ function startGame() {
 
     questionElement.textContent = questionText + currentCharacter.question;
 
+    
     displayResult();
 }
 
 
 function checkAnswer(answerr) {
+    
+    count++;
+    
+    console.log(count);
+    if (count == 2) {
+        document.getElementById("myImg").src = 'img/Wallpaper.jpg';
+    } else if (count == 3) {
+        document.getElementById("myImg").src = 'img/itis.png';
+    } else {
+        document.getElementById("myImg").src = 'img/Wallpaper.jpg';
+    }
 
     if (answerr === 'yes') {
         currentCharacter = currentCharacter.progression[0];
