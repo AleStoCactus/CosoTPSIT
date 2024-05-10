@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    margin: 20px auto;
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#question {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 10px 20px;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+}
