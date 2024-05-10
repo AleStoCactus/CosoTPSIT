@@ -12,24 +12,24 @@ const quest = {
                     progression: [
                         {
                             answer: 'Si',
-                            question: 'Itis?'
+                            question: 'Il tuo personaggio è Itis?'
                             
                         },
                         {
                             answer: 'No',
-                            question: 'Ti piacerebbe lavorare in una compagnia di sviluppo software?'
+                            question: 'Non ho scoperto il tuo personaggio'
                         }
                     ]
                 },
                 {
                     answer: 'No',
-                    question: 'Ti piacerebbe lavorare in una compagnia di sviluppo software?'
+                    question: 'Non ho scoperto il tuo personaggio'
                 }
             ]
         },
         {
             answer: 'No',
-            question: 'Non so cosa dirti'
+            question: 'Non ho scoperto il tuo personaggio'
         }
     ]
 };
@@ -150,7 +150,7 @@ function checkAnswer(answerr) {
     if (currentCharacter.progression !== undefined) {
         startGame();
     } else {
-        gameResult = `Il tuo personaggio è ${currentCharacter.question}`;
+        gameResult = `${currentCharacter.question}`;
         displayResult();
     }  
 }
