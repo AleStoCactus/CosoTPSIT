@@ -10,10 +10,13 @@
 <body>
     <h1>Indovina personaggio STEAM</h1>
     <div id="game-container">
-        <p id="question"></p>
-        <button id="yes-btn" onclick="checkAnswer('yes')">Sì</button>
-        <button id="no-btn" onclick="checkAnswer('no')">No</button>
-        <p id="result"></p>
+        <button id="restart" onclick="restartGame()">Restart</button>
+        <div id="listb">
+            <p id="question"></p>
+            <button id="yes-btn" onclick="checkAnswer('yes')">Sì</button>
+            <button id="no-btn" onclick="checkAnswer('no')">No</button>
+        </div>
+        <p id="result"></p><br>
         <img id="myImg" height="100px" src="img/Wallpaper.jpg"><br>
     </div>
 </body>

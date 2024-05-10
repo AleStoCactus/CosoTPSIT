@@ -112,7 +112,14 @@ const questionElement = document.getElementById('question');
 
 const resultElement = document.getElementById('result');
 
+const yes = document.getElementById('yes-btn');
+const no = document.getElementById('no-btn');
+const res = document.getElementById('restart');
+
+const lis = document.getElementById('listb');
+
 function startGame() {
+    res.style.display = "none";
     let questionText = "";
 
     
@@ -131,7 +138,6 @@ function startGame() {
 
 
 function checkAnswer(answerr) {
-    
     count++;
     
     console.log(count);
@@ -152,6 +158,9 @@ function checkAnswer(answerr) {
     if (currentCharacter.progression !== undefined) {
         startGame();
     } else {
+        console.log("AAAAAAAAAAA");
+        lis.style.display = "none";
+        res.style.display = "block";
         gameResult = `${currentCharacter.question}`;
         displayResult();
     }  
@@ -159,6 +168,16 @@ function checkAnswer(answerr) {
 
 function displayResult() {
     resultElement.textContent = gameResult;
+}
+
+function restartGame() {
+    count = 0;
+    currentQuestion = 0;
+    currentCharacter = charactersQ[0];
+    gameResult = '';
+    lis.style.display = "block";
+    res.style.display = "none";
+    startGame();
 }
 
 startGame();
