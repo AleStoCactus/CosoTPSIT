@@ -1,35 +1,35 @@
 const quest = {
     answer: 'Si',
-    question: '¿Te gusta la programación?',
+    question: 'Ti piace la programmazione?',
     progression: [
         {
             answer: 'Si',
-            question: '¿Te gustan los videojuegos?',
+            question: 'Ti piacciono i videogiochi?',
             progression: [
                 {
                     answer: 'Si',
-                    question: '¿Te gustaría trabajar en la industria de los videojuegos?',
+                    question: 'Ti piacerebbe lavorare in una compagnia di videogiochi?',
                     progression: [
                         {
                             answer: 'Si',
-                            question: '¿EL PORCODIOOOOOOOO?'
+                            question: 'Itis?'
                             
                         },
                         {
                             answer: 'No',
-                            question: '¿Te gustaría trabajar en una empresa de desarrollo de software?'
+                            question: 'Ti piacerebbe lavorare in una compagnia di sviluppo software?'
                         }
                     ]
                 },
                 {
                     answer: 'No',
-                    question: '¿Te gustaría trabajar en una empresa de desarrollo de software?'
+                    question: 'Ti piacerebbe lavorare in una compagnia di sviluppo software?'
                 }
             ]
         },
         {
             answer: 'No',
-            question: '¿Te gustaría trabajar en una empresa de desarrollo de software?'
+            question: 'Non so cosa dirti'
         }
     ]
 };
@@ -150,7 +150,7 @@ function checkAnswer(answerr) {
     if (currentCharacter.progression !== undefined) {
         startGame();
     } else {
-        gameResult = `Tu personaje es ${currentCharacter.question}`;
+        gameResult = `Il tuo personaggio è ${currentCharacter.question}`;
         displayResult();
     }  
 }
