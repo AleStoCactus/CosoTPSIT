@@ -97,17 +97,6 @@ const quest = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 const charactersQ = [
     quest,
 
