@@ -4,25 +4,26 @@ body {
 }
 
 #game-container {
-    margin: 20px auto;
-    width: 500px;
-    border: 1px solid #ccc;
-    padding: 20px;
+    margin: 40px auto;
+    width: 1250px;
+    border: 2px solid #ccc;
+    padding: 40px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
 #question {
-    font-size: 10px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 button {
-    margin: 10px 20px;
-    padding: 5px;
+    margin: 20px 40px;
+    font-size: 30px;
+    padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -35,11 +36,11 @@ button:hover {
 
 #result {
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #restart {
     background-color: red;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 40px;
 }
