@@ -17,7 +17,17 @@ const quest = {
                         },
                         {
                             answer: 'No',
-                            question: 'Non ho scoperto il tuo personaggio'
+                            question: 'Non ho scoperto il tuo personaggio',
+                            progression: [
+                                {
+                                    answer: 'Si',
+                                    question: 'Il tuo personaggio è Itis2?'
+                                },
+                                {
+                                    answer: 'No',
+                                    question: 'Non ho scoperto il tuo personaggio2'
+                                }
+                            ]
                         }
                     ]
                 },
@@ -33,16 +43,6 @@ const quest = {
         }
     ]
 };
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -119,6 +119,7 @@ const res = document.getElementById('restart');
 const lis = document.getElementById('listb');
 
 function startGame() {
+    document.getElementById("myImg").src = '';
     res.style.display = "none";
     let questionText = "";
 
@@ -141,13 +142,16 @@ function checkAnswer(answerr) {
     count++;
     
     console.log(count);
-    if (count == 2) {
-        document.getElementById("myImg").src = 'img/Wallpaper.jpg';
-    } else if (count == 3) {
-        document.getElementById("myImg").src = 'img/itis.png';
-    } else {
-        document.getElementById("myImg").src = 'img/Wallpaper.jpg';
-    }
+
+    //*/
+    //if (count == 2) {
+    //    document.getElementById("myImg").src = 'img/Wallpaper.jpg';
+    //} else if (count == 3 && answerr === 'yes') {
+    //    document.getElementById("myImg").src = 'img/itis.png';
+    //} else {
+    //    document.getElementById("myImg").style.display = "none";
+    //}
+    //*/
 
     if (answerr === 'yes') {
         currentCharacter = currentCharacter.progression[0];
@@ -158,6 +162,9 @@ function checkAnswer(answerr) {
     if (currentCharacter.progression !== undefined) {
         startGame();
     } else {
+        if (count == 3 && answerr === 'yes') {
+            document.getElementById("myImg").src = 'img/itis.png';
+        }
         console.log("AAAAAAAAAAA");
         lis.style.display = "none";
         res.style.display = "block";
@@ -177,6 +184,7 @@ function restartGame() {
     gameResult = '';
     lis.style.display = "block";
     res.style.display = "none";
+    document.getElementById("myImg").src = 'img/Wallpaper.jpg';
     startGame();
 }
 
