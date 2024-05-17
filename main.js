@@ -1,31 +1,41 @@
 const quest = {
     answer: 'Si',
-    question: 'Ti piace la programmazione?',
+    question: 'Il tuo personaggio è maschio?',
     progression: [
         {
             answer: 'Si',
-            question: 'Ti piacciono i videogiochi?',
+            question: 'Il tuo personaggio porta gli occhiali?',
             progression: [
                 {
                     answer: 'Si',
-                    question: 'Ti piacerebbe lavorare in una compagnia di videogiochi?',
+                    question: ' ',
                     progression: [
                         {
                             answer: 'Si',
-                            question: 'Il tuo personaggio è Itis?'
+                            question: ' ',
+                            progression: [
+                                {
+                                    answer: 'Si',
+                                    question: ' '
+                                },
+                                {
+                                    answer: 'No',
+                                    question: ' '
+                                }
+                            ]
                             
                         },
                         {
                             answer: 'No',
-                            question: 'Non ho scoperto il tuo personaggio',
+                            question: ' ',
                             progression: [
                                 {
                                     answer: 'Si',
-                                    question: 'Il tuo personaggio è Itis2?'
+                                    question: ' '
                                 },
                                 {
                                     answer: 'No',
-                                    question: 'Non ho scoperto il tuo personaggio2'
+                                    question: ' '
                                 }
                             ]
                         }
@@ -33,26 +43,16 @@ const quest = {
                 },
                 {
                     answer: 'No',
-                    question: 'Non ho scoperto il tuo personaggio'
+                    question: ' '
                 }
             ]
         },
         {
             answer: 'No',
-            question: 'Non ho scoperto il tuo personaggio'
+            question: ' '
         }
     ]
 };
-
-
-
-
-
-
-
-
-
-
 
 
 
