@@ -1,26 +1,31 @@
-Assegnati:
-Richard Dawkins: maschio - no occhiali - vivo - no colore - [science]
-Katherine Johnson: no maschio - occhiali - no vivo - no colore - [science]
 
-Elon Musk: maschio - no occhiali - vivo - no colore - [technology & engineering]
-Mark Zuckerberg: maschio - no occhiali - vivo - no colore - [technology]
-Bill Gates: maschio - occhiali - vivo - no colore - [technology]
-Larry Page: maschio - no occhiali - vivo - no colore - [technology]
+Bill Gates: maschio - occhiali - vivo [Tecnologico]
+Terence Tao: maschio - occhiali - vivo [Matematico]
+Steve Jobs: maschio - occhiali - vivo [Ex amministratore delegato Apple]
 
-Terence Tao: maschio - occhiali - vivo - no colore - [mathematics]
+Stephen Hawking: maschio - occhiali - no vivo [Cosmologo e Fisico] [FATTO]
 
-Non assegnati:
-Science: Dr. Charles Drew 
-Technology: Ada Lovelace
-Engineering: Nils Bohlin
-Arts: Frida Kahlo
-Mathematics: Srinivasa Ramanujan
-Science: Marie Curie
-Science: Albert Einstein
-Science: Stephen Hawking
-Technology: Steve Jobs
-Engineering: Nikola Tesla
-Engineering: Isambard Kingdom Brunel
-Art: Leonardo da Vinci
-Art: Frida Kahlo
-Mathematics: Alan Turing
+
+Richard Dawkins: maschio - no occhiali - vivo [Scienze]
+Elon Musk: maschio - no occhiali - vivo [Tecnologico & Ingegnere]
+Mark Zuckerberg: maschio - no occhiali - vivo [Tecnologico]
+Larry Page: maschio - no occhiali - vivo [Tecnologico]
+
+
+Srinivasa Ramanujan: maschio - no occhiali - no vivo - colore [Matematico]
+
+Dr. Charles Drew : maschio - no occhiali - no vivo - no colore [Chilurgo Americano]
+Nils Bohlin: maschio - no occhiali - no vivo - no colore [Ingegnere]
+Albert Einstein: maschio - no occhiali - no vivo - no colore [Fisico]
+Nikola Tesla: maschio - no occhiali - no vivo - no colore - [Inventore e Fisico]
+Isambard Kingdom Brunel: maschio - no occhiali - no vivo - no colore [Ingegnere]
+Leonardo da Vinci: maschio - no occhiali - no vivo - no colore [Scienziato e Inventore]
+Alan Turing: maschio - no occhiali - no vivo - no colore [Matematico e logico]
+
+
+
+Katherine Johnson: femmina - occhiali [Scienze] [FATTO]
+
+Ada Lovelace: femmina - no occhiali [Matematica] [FATTO]
+Frida Kahlo: femmina - no occhiali [Arte] [FATTO]
+Marie Curie: femmina - no occhiali [Fisica] [FATTO]
