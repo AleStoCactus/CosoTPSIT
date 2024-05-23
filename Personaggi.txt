@@ -1,28 +1,29 @@
 
-Bill Gates: maschio - occhiali - vivo [Tecnologico]
-Terence Tao: maschio - occhiali - vivo [Matematico]
-Steve Jobs: maschio - occhiali - vivo [Ex amministratore delegato Apple]
+Bill Gates: maschio - occhiali - vivo [Tecnologico] [FATTO]
+Terence Tao: maschio - occhiali - vivo [Matematico] [FATTO]
 
+Steve Jobs: maschio - occhiali - no vivo [Ex amministratore delegato Apple] [FATTO]
 Stephen Hawking: maschio - occhiali - no vivo [Cosmologo e Fisico] [FATTO]
 
+--------------------------------------------------------------------
 
-Richard Dawkins: maschio - no occhiali - vivo [Scienze]
-Elon Musk: maschio - no occhiali - vivo [Tecnologico & Ingegnere]
-Mark Zuckerberg: maschio - no occhiali - vivo [Tecnologico]
-Larry Page: maschio - no occhiali - vivo [Tecnologico]
-
-
-Srinivasa Ramanujan: maschio - no occhiali - no vivo - colore [Matematico]
-
-Dr. Charles Drew : maschio - no occhiali - no vivo - no colore [Chilurgo Americano]
-Nils Bohlin: maschio - no occhiali - no vivo - no colore [Ingegnere]
-Albert Einstein: maschio - no occhiali - no vivo - no colore [Fisico]
-Nikola Tesla: maschio - no occhiali - no vivo - no colore - [Inventore e Fisico]
-Isambard Kingdom Brunel: maschio - no occhiali - no vivo - no colore [Ingegnere]
-Leonardo da Vinci: maschio - no occhiali - no vivo - no colore [Scienziato e Inventore]
-Alan Turing: maschio - no occhiali - no vivo - no colore [Matematico e logico]
+Richard Dawkins: maschio - no occhiali - vivo [Scienze] [FATTO]
+Elon Musk: maschio - no occhiali - vivo [Tecnologico & Ingegnere] [FATTO]
+Mark Zuckerberg: maschio - no occhiali - vivo [Tecnologico] [FATTO]
+Larry Page: maschio - no occhiali - vivo [Tecnologico] [FATTO]
 
 
+Srinivasa Ramanujan: maschio - no occhiali - no vivo - colore [Matematico] [FATTO]
+
+Dr. Charles Drew : maschio - no occhiali - no vivo - no colore [Chilurgo Americano] [FATTO]
+Nils Bohlin: maschio - no occhiali - no vivo - no colore [Ingegnere] [FATTO]
+Albert Einstein: maschio - no occhiali - no vivo - no colore [Fisico] [FATTO]
+Nikola Tesla: maschio - no occhiali - no vivo - no colore - [Inventore e Fisico] [FATTO]
+Isambard Kingdom Brunel: maschio - no occhiali - no vivo - no colore [Ingegnere] [FATTO]
+Leonardo da Vinci: maschio - no occhiali - no vivo - no colore [Scienziato e Inventore] [FATTO]
+Alan Turing: maschio - no occhiali - no vivo - no colore [Matematico e logico] [FATTO]
+
+----------------------------------------------------------
 
 Katherine Johnson: femmina - occhiali [Scienze] [FATTO]
 

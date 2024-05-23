@@ -12,15 +12,15 @@ const quest = {
                     progression: [
                         {
                             answer: 'Si',
-                            question: ' ',
+                            question: 'Il tuo personaggio è un matematico?',
                             progression: [
                                 {
                                     answer: 'Si',
-                                    question: ''
+                                    question: 'Congratulazioni, il tuo personaggio è Terence Tao!'
                                 },
                                 {
                                     answer: 'No',
-                                    question: ''
+                                    question: 'Congratulazioni, il tuo personaggio è Bill Gates!'
                                 }
                             ]
                         },
@@ -32,7 +32,146 @@ const quest = {
                 },
                 {
                     answer: 'No',
-                    question: ' '
+                    question: 'Il tuo personaggio è vivo?',
+                    progression: [
+                        {
+                            answer: 'Si',
+                            question: 'Il tuo personaggio ha lavorato nell ambito scientifico?',
+                            progression: [
+                                {
+                                    answer: 'Si',
+                                    question: 'Congratulazioni, il tuo personaggio è Richard Dawkins!'
+                                },
+                                {
+                                    answer: 'No',
+                                    question: 'Il tuo personaggio è amministratore delegato di SpaceX?',
+                                    progression: [
+                                        {
+                                            answer: 'Si',
+                                            question: 'Congratulazioni, il tuo personaggio è Elon Musk!'
+                                        },
+                                        {
+                                            answer: 'No',
+                                            question: 'Il tuo personaggio ha creato Meta?',
+                                            progression: [
+                                                {
+                                                    answer: 'Si',
+                                                    question: 'Congratulazioni, il tuo personaggio è Mark Zuckerberg!'
+                                                },
+                                                {
+                                                    answer: 'No',
+                                                    question: 'Congratulazioni, il tuo personaggio è Larry Page!'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+
+                            ]
+                        },
+                        {
+                            answer: 'No',
+                            question: 'Il tuo personaggio è un ex amministratore delegato Apple?',
+                            progression: [
+                                {
+                                    answer: 'Si',
+                                    question: 'Congratulazioni, il tuo personaggio è Steve Jobs!'
+                                },
+                                {
+                                    answer: 'No',
+                                    question: 'Il tuo personaggio è di colore?',
+                                    progression: [
+                                        {
+                                            answer: 'Si',
+                                            question: 'Congratulazioni, il tuo personaggio è Srinivasa Ramanujan!'
+                                        },
+                                        {
+                                            answer: 'No',
+                                            question: 'Il tuo personaggio è un chirurgo?',
+                                            progression: [
+                                                {
+                                                    answer: 'Si',
+                                                    question: 'Congratulazioni, il tuo personaggio è Dr. Charles Drew'
+                                                },
+                                                {
+                                                    answer: 'No',
+                                                    question: 'Il tuo personaggio è un ingegnere?',
+                                                    progression: [
+                                                        {
+                                                            answer: 'Si',
+                                                            question: 'Congratulazioni, il tuo personaggio è Nils Bohlin'
+                                                        },
+                                                        {
+                                                            answer: 'No',
+                                                            question: 'Il tuo personaggio è un genio?',
+                                                            progression: [
+                                                                {
+                                                                    answer: 'Si',
+                                                                    question: 'Congratulazioni, il tuo personaggio è Albert Einstein'
+                                                                },
+                                                                {
+                                                                    answer: 'No',
+                                                                    question: 'Il tuo personaggio è un inventore elettricista?',
+                                                                    progression: [
+                                                                        {
+                                                                            answer: 'Si',
+                                                                            question: 'Congratulazioni, il tuo personaggio è Nikola Tesla'
+                                                                        },
+                                                                        {
+                                                                            answer: 'No',
+                                                                            question: 'Il tuo personaggio è un ingegnere?',
+                                                                            progression: [
+                                                                                {
+                                                                                    answer: 'Si',
+                                                                                    question: 'Congratulazioni, il tuo personaggio è Isambard Kingdom Brunel'
+                                                                                },
+                                                                                {
+                                                                                    answer: 'No',
+                                                                                    question: 'Il tuo personaggio è uno scienziato e inventore?',
+                                                                                    progression: [
+                                                                                        {
+                                                                                            answer: 'Si',
+                                                                                            question: 'Congratulazioni, il tuo personaggio è Leonardo da Vinci'
+                                                                                        },
+                                                                                        {
+                                                                                            answer: 'No',
+                                                                                            question: 'Il tuo personaggio è omosessuale?',
+                                                                                            progression: [
+                                                                                                {
+                                                                                                    answer: 'Si',
+                                                                                                    question: 'Congratulazioni, il tuo personaggio è Alan Turing'
+                                                                                                },
+                                                                                                {
+                                                                                                    answer: 'No',
+                                                                                                    question: '',
+                                                                                                },
+                                                                                                
+                                                                                            ]
+                                                                                        },
+                                                                                        
+                                                                                    ]
+                                                                                },
+                                                                                
+                                                                            ]
+                                                                        },
+                                                                        
+                                                                    ]
+                                                                },
+                                                                
+                                                            ]
+                                                        },
+                                                        
+                                                    ]
+                                                },
+                                                
+                                            ]
+                                        },
+                                        
+                                    ]
+                                },
+                            ]
+                        }
+                    ]
                 }
             ]
         },
