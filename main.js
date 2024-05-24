@@ -91,7 +91,7 @@ const quest = {
                                             progression: [
                                                 {
                                                     answer: 'Si',
-                                                    question: 'Congratulazioni, il tuo personaggio è Dr. Charles Drew'
+                                                    question: 'Congratulazioni, il tuo personaggio è Dr. Charles Drew!'
                                                 },
                                                 {
                                                     answer: 'No',
@@ -99,7 +99,7 @@ const quest = {
                                                     progression: [
                                                         {
                                                             answer: 'Si',
-                                                            question: 'Congratulazioni, il tuo personaggio è Nils Bohlin'
+                                                            question: 'Congratulazioni, il tuo personaggio è Nils Bohlin!'
                                                         },
                                                         {
                                                             answer: 'No',
@@ -107,7 +107,7 @@ const quest = {
                                                             progression: [
                                                                 {
                                                                     answer: 'Si',
-                                                                    question: 'Congratulazioni, il tuo personaggio è Albert Einstein'
+                                                                    question: 'Congratulazioni, il tuo personaggio è Albert Einstein!'
                                                                 },
                                                                 {
                                                                     answer: 'No',
@@ -115,7 +115,7 @@ const quest = {
                                                                     progression: [
                                                                         {
                                                                             answer: 'Si',
-                                                                            question: 'Congratulazioni, il tuo personaggio è Nikola Tesla'
+                                                                            question: 'Congratulazioni, il tuo personaggio è Nikola Tesla!'
                                                                         },
                                                                         {
                                                                             answer: 'No',
@@ -123,7 +123,7 @@ const quest = {
                                                                             progression: [
                                                                                 {
                                                                                     answer: 'Si',
-                                                                                    question: 'Congratulazioni, il tuo personaggio è Isambard Kingdom Brunel'
+                                                                                    question: 'Congratulazioni, il tuo personaggio è Isambard Kingdom Brunel!'
                                                                                 },
                                                                                 {
                                                                                     answer: 'No',
@@ -131,7 +131,7 @@ const quest = {
                                                                                     progression: [
                                                                                         {
                                                                                             answer: 'Si',
-                                                                                            question: 'Congratulazioni, il tuo personaggio è Leonardo da Vinci'
+                                                                                            question: 'Congratulazioni, il tuo personaggio è Leonardo da Vinci!'
                                                                                         },
                                                                                         {
                                                                                             answer: 'No',
@@ -139,11 +139,11 @@ const quest = {
                                                                                             progression: [
                                                                                                 {
                                                                                                     answer: 'Si',
-                                                                                                    question: 'Congratulazioni, il tuo personaggio è Alan Turing'
+                                                                                                    question: 'Congratulazioni, il tuo personaggio è Alan Turing!'
                                                                                                 },
                                                                                                 {
                                                                                                     answer: 'No',
-                                                                                                    question: '',
+                                                                                                    question: 'Non ho scoperto il tuo personaggio!',
                                                                                                 },
                                                                                                 
                                                                                             ]
@@ -231,6 +231,8 @@ const charactersQ = [
 ];
 
 var donna = false;
+var occhiali = false;
+var vivo = false;
 
 let count = 0;
 
@@ -291,15 +293,41 @@ function checkAnswer(answerr) {
 
     if (currentCharacter.progression !== undefined) {
         if (count == 1 && answerr === 'no') {
+            console.log("donna");
             console.log(donna);
-            donna = true,
+            donna = true;
             console.log(donna);
+        }
+        if (count == 2 && answerr === 'yes') {
+            console.log("occhiali");
+            console.log(occhiali);
+            occhiali = true;
+            console.log(occhiali);
+        }
+        if (count == 3 && answerr === 'no' && occhiali === false) {
+            console.log("occhiali");
+            console.log(occhiali);
+            occhiali = true;
+            console.log(occhiali);
         }
         startGame();
     } else {
-        if (count == 3 && answerr === 'no' && donna !== true) {
+
+        //IF DONNA FALSE
+        //IF OCCHIALI FALSE
+
+        if (count == 3 && answerr === 'no' && donna !== true && occhiali === true) {
             document.getElementById("myImg").src = 'img/StephenHawking.png';
         }
+
+        if (count == 4 && answerr === 'yes' && donna !== true && occhiali === true) {
+            document.getElementById("myImg").src = 'img/TerenceTao.jpg';
+        }
+        if (count == 4 && answerr === 'no' && donna !== true && occhiali === true) {
+            document.getElementById("myImg").src = 'img/BillGates.jpg';
+        }
+
+        //IF DONNA TRUE
 
         if (count == 2 && answerr === 'yes' && donna === true) {
             document.getElementById("myImg").src = 'img/KatherineJohnson.webp';
