@@ -225,6 +225,8 @@ const quest = {
 
 
 
+
+
 const charactersQ = [
     quest,
 
@@ -298,53 +300,122 @@ function checkAnswer(answerr) {
             donna = true;
             console.log(donna);
         }
-        if (count == 2 && answerr === 'yes') {
+        if (count == 2 && answerr === 'yes' && donna === false) {
             console.log("occhiali");
             console.log(occhiali);
             occhiali = true;
             console.log(occhiali);
         }
-        if (count == 3 && answerr === 'no' && occhiali === false) {
-            console.log("occhiali");
-            console.log(occhiali);
-            occhiali = true;
-            console.log(occhiali);
+        if (count == 3 && answerr === 'yes' && occhiali === false && donna === false) {
+            console.log("vivo");
+            console.log(vivo);
+            vivo = true;
+            console.log(vivo);
         }
         startGame();
     } else {
 
         //IF DONNA FALSE
-        //IF OCCHIALI FALSE
+        //IF OCCHIALI TRUE
 
         if (count == 3 && answerr === 'no' && donna !== true && occhiali === true) {
             document.getElementById("myImg").src = 'img/StephenHawking.png';
+            console.log("Stephen Hawking");
         }
-
         if (count == 4 && answerr === 'yes' && donna !== true && occhiali === true) {
             document.getElementById("myImg").src = 'img/TerenceTao.jpg';
+            console.log("Terence Tao");
         }
         if (count == 4 && answerr === 'no' && donna !== true && occhiali === true) {
             document.getElementById("myImg").src = 'img/BillGates.jpg';
+            console.log("Bill Gates");
         }
 
+        //IF OCCHIALI FALSE
+        //VIVO TRUE
+        if (count == 4 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === true) {
+            document.getElementById("myImg").src = 'img/RichardDawkins.jpg';
+            console.log("Richard Dawkins");
+        }
+        if (count == 5 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === true) {
+            document.getElementById("myImg").src = 'img/ElonMusk.jpg';
+            console.log("Elon Musk");
+        }
+        if (count == 6 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === true) {
+            document.getElementById("myImg").src = 'img/MarkZuckerberg.jpg';
+            console.log("Mark Zuckerberg");
+        }
+        if (count == 6 && answerr === 'no' && donna !== true && occhiali !== true && vivo === true) {
+            document.getElementById("myImg").src = 'img/LarryPage.jpg';
+            console.log("Larry Page");
+        }
+
+        //VIVO FALSE
+        if (count == 4 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === false) {
+            document.getElementById("myImg").src = 'img/SteveJobs.jpg';
+            console.log("Steve Jobs");
+        }
+        if (count == 5 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === false) {
+            document.getElementById("myImg").src = 'img/SrinivasaRamanujan.jpg';
+            console.log("Srinivasa Ramanujan");
+        }
+        if (count == 6 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === false) {
+            document.getElementById("myImg").src = 'img/DrCharlesDrew.jpg';
+            console.log("Dr. Charles Drew");
+        }
+        if (count == 7 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === false) {
+            document.getElementById("myImg").src = 'img/NilsBohlin.jpg';
+            console.log("Nils Bohlin");
+        }
+        if (count == 8 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === false) {
+            document.getElementById("myImg").src = 'img/AlbertEinstein.jpg';
+            console.log("Albert Einstein");
+        }
+        if (count == 9 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === false) {
+            document.getElementById("myImg").src = 'img/NikolaTesla.jpg';
+            console.log("Nikola Tesla");
+        }
+        if (count == 10 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === false) {
+            document.getElementById("myImg").src = 'img/IsambardKingdomBrunel.jpg';
+            console.log("Isambard Kingdom Brunel");
+        }
+        if (count == 11 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === false) {
+            document.getElementById("myImg").src = 'img/LeonardodaVinci.jpg';
+            console.log("Leonardo da Vinci");
+        }
+        if (count == 12 && answerr === 'yes' && donna !== true && occhiali !== true && vivo === false) {
+            document.getElementById("myImg").src = 'img/AlanTuring.jpg';
+            console.log("Alan Turing");
+        }
+
+        
         //IF DONNA TRUE
 
         if (count == 2 && answerr === 'yes' && donna === true) {
             document.getElementById("myImg").src = 'img/KatherineJohnson.webp';
+            console.log("Katherine Johnson");
         }
         if (count == 3 && answerr === 'yes' && donna === true) {
             document.getElementById("myImg").src = 'img/AdaLovelace.jpg';
+            console.log("Ada Lovelace");
         }
         if (count == 4 && answerr === 'yes' && donna === true) {
             document.getElementById("myImg").src = 'img/MarieCurie.jpg';
+            console.log("Marie Curie");
+
         }
         if (count == 4 && answerr === 'no' && donna === true) {
             document.getElementById("myImg").src = 'img/FridaKahlo.jpg';
+            console.log("Frida Kahlo");
         }
-        console.log("AAAAAAAAAAA");
+
+        console.log("Finish");
         lis.style.display = "none";
         res.style.display = "block";
         gameResult = `${currentCharacter.question}`;
+        donna = false;
+        occhiali = false;
+        vivo = false;
         displayResult();
     }  
 }
